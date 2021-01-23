@@ -152,7 +152,9 @@ bool cPluginBgprocess::ProcessArgs(int argc, char *argv[])
 bool cPluginBgprocess::Initialize(void)
 {
   // Initialize any background activities the plugin shall perform.
-  RegisterI18n(tlPhrases);
+#if VDRVERSNUM < 10507
+RegisterI18n(tlPhrases);
+#endif
   return true;
 }
 

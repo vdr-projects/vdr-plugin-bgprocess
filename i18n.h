@@ -13,6 +13,8 @@
 #include <vdr/i18n.h>
 #include <vdr/config.h>         // for VDRVERSNUM define only
 
+#if VDRVERSNUM < 10507
 extern const tI18nPhrase tlPhrases[];
+#endif
 
 #endif //_I18N__H
