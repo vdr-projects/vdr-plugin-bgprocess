@@ -332,7 +332,7 @@ void BgProcessMenu::ShowBgProcesses()
  Clear();
  if (iter == bgProcessList.end() && CompletedList.size()==0)
    {
-    Add(new cOsdItem(" "),osUnknown,false);
+    Add(new cOsdItem(" ",osUnknown,false));
     Add(new cOsdItem(tr(" No background process running"),osUnknown,false));
    }
  for (; iter != bgProcessList.end(); iter++)
