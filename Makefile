@@ -29,7 +29,7 @@ TMPDIR = /tmp
 -include $(VDRDIR)/Make.config
 
 ### Test whether VDR has locale support
-VDRLOCALE = $(shell grep '^LOCALEDIR' $(VDRDIR)/Makefile)
+VDRLOCALE = $(shell grep 'I18N_DEFAULT_LOCALE' $(VDRDIR)/i18n.h)
 
 ### The version number of VDR's plugin API (taken from VDR's "config.h"):
 
