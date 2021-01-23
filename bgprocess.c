@@ -22,7 +22,7 @@ std::map <string, BgProcessData> bgProcessList; // list of all BackGround Proces
 std::map <string, BgProcessData> CompletedList; // list of all BackGround Process finished
 std::map <string, time_t> CompletedTimeList; // list of all BackGround Process finished
 
-static const char *VERSION        = "0.1.0";
+static const char *VERSION        = "0.1.1";
 static const char *DESCRIPTION    = "Collects and lists background processes and their status";
 static char MAINMENUENTRY[32]     = "Activity";
 
